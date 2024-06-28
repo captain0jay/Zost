@@ -13,6 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^12.1.0",
+    "detect-port": "^1.6.1",
+    "find-process": "^1.4.7",
+    "inquirer": "^9.3.1",
     "open": "^10.1.0",
     "ora": "^8.0.1"
   }

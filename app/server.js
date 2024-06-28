@@ -2,6 +2,7 @@ const express = require('express');
 const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const port = process.argv[2] || 4000;
 
 const app = express();
 app.use(express.json());
@@ -31,6 +32,6 @@ app.get('/api/read-file', (req, res) => {
   });
 });
 
-app.listen(4000, () => {
-  console.log('Backend server is running on http://localhost:4000');
+app.listen(port, () => {
+  console.log('zost app is running on http://localhost:4000');
 });
